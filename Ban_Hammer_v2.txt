@@ -4,7 +4,7 @@ function ban(Steamid:string,Time:string,Reason:string){if(Done==0){if(Steamid!="
 function disconnect(Time){Done=1,timer("a",Time*1000),if(clk("a")){if(AllowDisconnection==2){hint("All users banned. Disconnecting...",5),concmd("ulx kick ^ All Reported minges were banned. Disconnecting..."),selfDestructAll()}else{hint("You were not dissconnected Because one of your bans failed",20)}}}
  
 #Do ban("Steamid","Time","Reason") to ban players.
-#If you want to disconnect after the bans are done do disconnect(time) after your bans. Make sure time is above 3.
+#If you want to disconnect after the bans are done do disconnect(time) after your bans. Make sure time is 3 or higher.
 #Make sure wire_expression2_concmd is set to 1 if it is not this e2 will do nothing!!!
 
 ban("STEAM_0:1:541359295","3d","Prop Pushing")
